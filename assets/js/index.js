@@ -159,14 +159,14 @@ const app = {
             // Update song current time
             const currentMin = Math.floor(audio.currentTime / 60)
             const currentSec = Math.floor(audio.currentTime % 60)
-            timeStart.textContent = `${currentMin}:${currentSec}`
+            timeStart.textContent = `${currentMin}:${currentSec < 10 ? '0' + currentSec : currentSec}`
         }
 
         // update song total  duration
         audio.onloadeddata = function () {
             const totalMin = Math.floor(audio.duration / 60)
             const totalSec = Math.floor(audio.duration % 60)
-            timeEnd.textContent = `${totalMin}:${totalSec}`
+            timeEnd.textContent = `${totalMin}:${totalSec < 10 ? '0' + totalSec : totalSec }`
         }
 
         // update currentTime when change progress
