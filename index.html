@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Music App</title>
+	<link rel="icon" type="image/x-icon" href="./assets/images/song1.jpg">
+</head>
+
+<body>
+	<div class="main">
+		<div class="music-app">
+			<div class="music-app-top">
+				<!-- Header -->
+				<div class="header">
+					<h4>Now playing:</h4>
+					<h3>Sting 57th & 9th</h3>
+				</div>
+
+				<!-- CD -->
+				<div class="cd">
+					<div class="cd-thumb" style="background-image: url('./assets/images/song1.jpg')"></div>
+					<div class="load-song">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+				</div>
+
+				<!-- Control -->
+				<div class="control">
+					<div class="btn btn-repeat">
+						<i class="ion-arrow-return-right"></i>
+					</div>
+					<div class="btn btn-prev">
+						<i class="ion-ios-skipbackward"></i>
+					</div>
+					<div class="btn btn-toggle-play">
+						<i class="ion-play"></i>
+						<i class="ion-pause"></i>
+					</div>
+					<div class="btn btn-next">
+						<i class="ion-ios-skipforward"></i>
+					</div>
+					<div class="btn btn-random">
+						<i class="ion-shuffle"></i>
+					</div>
+				</div>
+
+				<!--progress  -->
+				<input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+				<!-- Time Song -->
+				<div class="time-song">
+					<span class="time-start">0:20</span>
+					<span class="time-end">4:20</span>
+				</div>
+
+				<!-- Audio -->
+				<audio id="audio" src=""></audio>
+			</div>
+
+			<!-- Playlist -->
+			<div class="music-app-bottom">
+				<div class="playlist">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/js/index.js"></script>
+</body>
+
+</html>
